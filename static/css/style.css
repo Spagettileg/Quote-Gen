@@ -21,3 +21,16 @@ body {
     /* Align items horizontally */
     justify-content: center;
 }
+
+/*------- Containers --------*/
+
+.quote-container {
+    width: auto;
+    max-width: 56.25rem;
+    /* Padding top & bottom 1.25rem, Padding left & right 1.875rem */
+    padding: 1.25rem 1.875rem;
+    /* Create a curved corner effect to container */ 
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+}
