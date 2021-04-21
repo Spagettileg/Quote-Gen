@@ -46,3 +46,22 @@ body {
 .fa-quote-left {
     font-size: 4rem;
 }
+
+.quote-author {
+    margin-top: 0.9375rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+/*------- Media Queries --------*/
+
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        /* Padding left & right updated */
+        margin: auto 0.9375rem;
+    }
+    .quote-text {
+        font-size: 2.5rem;
+    }
+}
