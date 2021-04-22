@@ -82,7 +82,7 @@ button:hover {
 }
 
 button:active {
-    /* transform effect to move button down by 0.3rem */
+    /* transform effect by user clicking button down by 0.3rem */
     transform: translate(0, 0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
