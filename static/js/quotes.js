@@ -1,3 +1,6 @@
+// local database serves as back up to main quote api database 
+// copied from https://type.fit/api/quotes
+
 const localQuotes = [
     {
     "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
