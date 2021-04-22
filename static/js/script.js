@@ -1,5 +1,13 @@
+// constant variables - unable to be re-assigned 
+const quoteContainer = document.getElementById('quote-container');
+const quoteText = document.getElementById('quote');
+const authorText = document.getElementById('author');
+const twitterBtn = document.getElementById('twitter');
+const newQuoteBtn = document.getElementById('new-quote');
+
 // Global Variable
 // let apiQuotes = []; // empty array allows for json data to load into space.
+               
 
 // Show New Quote
 function newQuote() {
@@ -8,7 +16,8 @@ function newQuote() {
     // Math.random will select single random quote from array
     // Can replace apiQuotes with localQuotes, in case of external data fail
     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-    console.log(quote);
+    authorText.textContent = quote.author;
+    quoteText.textContent = quote.text;
 }
 
 // // Get Quotes from API
@@ -31,4 +40,4 @@ function newQuote() {
 
 // Upon succcessful load of API data
 // getQuotes();
-   newQuote(); 
+   newQuote();
