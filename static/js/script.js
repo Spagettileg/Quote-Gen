@@ -50,6 +50,19 @@ function newQuote() {
 //     }
 // }
 
+
+// Tweet Quote
+function tweetQuote() {
+    // backticks used for twitter url address
+    // template variable added to url address to help pass the quoteText string 
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+    window.open(twitterUrl, '_blank'); // opens twitter in a brand new browser tab 
+}
+
+// Event Listeners enabling button functionality
+newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
+
 // Upon succcessful load of API data
 // getQuotes();
    newQuote();
