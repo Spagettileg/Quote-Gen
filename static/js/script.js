@@ -4,12 +4,26 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
+const loader = document.getElementById('loader');
 
 // Global Variable
 // let apiQuotes = []; // empty array allows for json data to load into space.
 
+// Show Loading
+function loading() {
+    loader.hidden = false; // false indicates we want loader on show.
+    quoteContainer.hidden = true;
+}
+
+// Hide Loading
+function complete() {
+    quoteContainer.hidden = false;
+    loader.hidden = true; // true indicates we want loader to be hidden.
+}
+
 // Show New Quote
 function newQuote() {
+    loading();
     // Select a random quote from apiQuotes array
     // Math.floor will return rounded whole number
     // Math.random will select single random quote from array
@@ -29,11 +43,14 @@ function newQuote() {
     } else {
         quoteText.classList.remove('long-quote');
     }
+    // Set the Quote, hide the loader
     quoteText.textContent = quote.text;
+    complete();
 }
 
 // // Get Quotes from API
 // async function getQuotes() {
+       loading();    
 //     const apiUrl = 'https://type.fit/api/quotes';
     
 //     // try to collect API data. If not working, then catch error to solve & fix  
