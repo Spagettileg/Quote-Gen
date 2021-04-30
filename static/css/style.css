@@ -55,6 +55,12 @@ body {
     font-style: oblique;
 }
 
+.quote-header {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem 0 2rem;
+}
+
 /*------- Buttons --------*/
 
 .button-container {
