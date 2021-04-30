@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quote-Gen</title>
     <!-  Bootstrap CSS ->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha256-aAr2Zpq8MZ+YA/D6JtRD3xtrwpEz2IqOS+pWD/7XKIw=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha256-aAr2Zpq8MZ+YA/D6JtRD3xtrwpEz2IqOS+pWD/7XKIw=" crossorigin="anonymous" />
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Hover CSS -->
@@ -25,50 +26,55 @@
                 <div class="quote-title">"Quote-Gen"</div>
             </div>
         </div>
-    
-    <div class="quote-container" id="quote-container">
-        <!-- Quote -->
-        <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <!-- Inner quote text powered by Javascript -->
-            <span id="quote"></span>
-        </div>
-        <!-- Author -->
-        <div class="quote-author">
-            <!-- Inner author text powered by Javascript -->
-            <span id="author"></span>
-        </div>
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Tweet this!">
+
+        <div class="quote-container" id="quote-container">
+            <!-- Quote -->
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <!-- Inner quote text powered by Javascript -->
+                <span id="quote"></span>
+            </div>
+            <!-- Author -->
+            <div class="quote-author">
+                <!-- Inner author text powered by Javascript -->
+                <span id="author"></span>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title="Tweet this!">
                 <i class="fab fa-twitter"></i>
             </button>
-            <button id="new-quote">New Quote</button>
-        </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div>© Quote-Gen | <span id="developer-years"></span><br> Website design | Paul Friel | Full Stack Developer</div>
-                <ul class="list-group list-group-horizontal social-links">
-                    <li class="pr-2"><a href="https://www.linkedin.com/in/paul-friel-mbcs-a0821b43/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/Spagettileg" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
+                <button id="new-quote">New Quote</button>
             </div>
         </div>
-    </footer>
+        <footer>
+            <div class="author-container">
+                <div class="social-section">
+                    <div class="container">
+                        <div>© Quote-Gen | <span id="developer-years"></span> Website design <br> Paul Friel | Full Stack Developer</div>
+                        <div class="social-header">
+                            <ul class="list-group list-group-horizontal social-links">
+                                <li class="pr-2"><a href="https://www.linkedin.com/in/paul-friel-mbcs-a0821b43/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/Spagettileg" target="_blank"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    
+
     <!-- Loader -->
     <div class="loader" id="loader"></div>
-    
+
     <!-- JS Library for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
-    
+
     <!-- Personal Javascript Files -->
     <script src="static/js/quotes.js"></script>
     <script src="static/js/script.js"></script>
 </body>
+
 </html>
