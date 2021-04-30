@@ -24,6 +24,12 @@ body {
 
 /*------- Containers --------*/
 
+.quote-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .quote-container {
     width: auto;
     max-width: 56.25rem;
@@ -55,7 +61,7 @@ body {
     font-style: oblique;
 }
 
-.quote-header {
+.quote-title {
     font-size: 3rem;
     font-weight: 600;
     padding: 2rem 0 2rem;
