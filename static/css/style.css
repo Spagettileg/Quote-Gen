@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+/*----------- Special styling on padding, margin & text -------------*/
+
 html {
     /* Ensures horizontal scroll bar is avoided through padding control */
     box-sizing: border-box;
@@ -20,6 +22,11 @@ body {
     align-items: center;
     /* Align items horizontally */
     justify-content: center;
+}
+
+ul {
+    /* removes bullet points from unordered list */
+    list-style-type: none;
 }
 
 /*------- Containers --------*/
@@ -65,6 +72,10 @@ body {
     font-size: 3rem;
     font-weight: 600;
     padding: 2rem 0 2rem;
+}
+
+.author-container {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*------- Buttons --------*/
@@ -123,6 +134,55 @@ button:active {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/*------- Footer ---------------*/
+
+.social-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.social-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.social-links {
+    padding-bottom: 0.9375rem;
+}
+
+.social-links li a i {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.75rem 0;
+    border-radius: 50%;
+    /*Enables creation of circle where width & height of same value*/
+    font-size: 1rem;
+    /*Enables icon to sit within border*/
+    line-height: 0.4375rem;
+    text-align: center;
+    color: #fafafa;
+    /*off-white*/
+    background: #8f8f8f;
+    /*pale grey*/
+    transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    /*Windows*/
+    -webkit-transition: all 0.35s ease-in-out;
+    /*Apple*/
+}
+
+.social-links li a i:hover {
+    background: #2794A9;
+    /*Teal*/
+    transform: scale(1.15);
+    opacity: 0.9;
 }
 
 /*------- Media Queries --------*/
