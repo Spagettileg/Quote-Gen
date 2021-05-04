@@ -17,5 +17,5 @@ Link to [GitHub](https://github.com/Spagettileg/Quote-Gen) Repo
 ***
 
 <div align="center">
-<img src="assets/img/quotes.png">
+<img src="static/img/quotes.png">
 </div>
