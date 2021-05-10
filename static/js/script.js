@@ -21,7 +21,7 @@ function removeLoadingSpinner() {
 
 // Show New Quote
 function newQuote() {
-    loading();
+    showLoadingSpinner();
     // Select a random quote from apiQuotes array
     // Math.floor will return rounded whole number
     // Math.random will select single random quote from array
@@ -43,12 +43,12 @@ function newQuote() {
     }
     // Set the Quote, hide the loader
     quoteText.textContent = quote.text;
-    complete();
+    removeLoadingSpinner();
 }
 
 // // Get Quotes from API
 // async function getQuotes() {
-       loading();    
+       showLoadingSpinner();    
 //     const apiUrl = 'https://type.fit/api/quotes';
     
 //     // try to collect API data. If not working, then catch error to solve & fix  
