@@ -14,8 +14,7 @@ function showLoadingSpinner() {
     quoteContainer.hidden = true;
 }
 
-// Hide Loading
-function complete() {
+function removeLoadingSpinner() {
     quoteContainer.hidden = false;
     loader.hidden = true; // true indicates we want loader to be hidden.
 }
