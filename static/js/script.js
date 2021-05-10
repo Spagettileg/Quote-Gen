@@ -9,8 +9,7 @@ const loader = document.getElementById('loader');
 // Global Variable
 // let apiQuotes = []; // empty array allows for json data to load into space.
 
-// Show Loading
-function loading() {
+function showLoadingSpinner() {
     loader.hidden = false; // false indicates we want loader on show.
     quoteContainer.hidden = true;
 }
